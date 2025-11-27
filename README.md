@@ -1,2 +1,2 @@
 # newsletter-juicer
-A multi-agentic system that finds newsletters, sorts them into categories and summarizes them to bite-sized knowledge pieces easily understood by the user.
+A multi-agentic system that finds active & subscribed newsletters in the user's e-mail, sorts them into categories and summarizes them into bite-sized knowledge pieces easily understood by them.
