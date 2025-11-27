@@ -1,8 +1,4 @@
-# ============================================================================
-# NEWSLETTER EMAIL PARSER WITH MULTI-AGENT ARCHITECTURE
 # Gemini API Free Tier (10 RPM for Flash, 250K TPM)
-# ============================================================================
-
 import os
 import json
 import re
@@ -11,10 +7,6 @@ from collections import defaultdict
 from typing import Optional
 import google.generativeai as genai
 from dataclasses import dataclass, asdict
-
-# ============================================================================
-# CONFIGURATION
-# ============================================================================
 
 # Get API key from environment variable
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "YOUR_API_KEY_HERE")
@@ -462,4 +454,5 @@ def main():
 # ============================================================================
 
 if __name__ == "__main__":
+
     main()
