@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# ============================================================================
-# QUICK START SCRIPT - Newsletter Email Parser
-# Run this first to verify setup and see demo
-# ============================================================================
-
 import os
 import sys
 import subprocess
@@ -125,4 +119,5 @@ def main():
         sys.exit(1)
 
 if __name__ == "__main__":
+
     main()
