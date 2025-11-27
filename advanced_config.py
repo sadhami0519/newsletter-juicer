@@ -1,7 +1,3 @@
-# ============================================================================
-# ADVANCED CONFIGURATION & EMAIL INTEGRATION EXAMPLES
-# ============================================================================
-
 """
 This module provides advanced configurations and email source integrations
 for the Newsletter Email Parser project.
@@ -488,4 +484,5 @@ If using IMAP with Gmail:
 5. Use this 16-character password in ImapEmailSource
 
 Note: This is different from your regular Gmail password and is more secure.
+
 """
