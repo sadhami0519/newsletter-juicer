@@ -34,11 +34,11 @@ Curious professionals subscribe to dozens of newsletters across diverse topics:
 
 Instead of manual curation, **Newsletter Juicer** deploys specialized AI agents that work together:
 
-✅ **Automatic Processing** — Runs daily/weekly without user intervention  
-✅ **Smart Categorization** — Organizes newsletters into 9 meaningful topics  
-✅ **Instant Summaries** — Bite-sized paragraphs you can absorb in minutes  
-✅ **Duplicate Detection** — Never process the same newsletter twice  
-✅ **Zero Knowledge Loss** — Keep all original links and content available  
+**Automatic Processing** — Runs daily/weekly without user intervention  
+**Smart Categorization** — Organizes newsletters into 9 meaningful topics  
+**Instant Summaries** — Bite-sized paragraphs you can absorb in minutes  
+**Duplicate Detection** — Never process the same newsletter twice  
+**Zero Knowledge Loss** — Keep all original links and content available  
 
 **Impact:** Users stay informed, save time, and unlock opportunities that would've gone unnoticed.
 
@@ -175,14 +175,14 @@ OUTPUT (JSON + Console Display)
 
 ### Key Features
 
-✅ **Multi-Agent Architecture** — Three specialized agents work sequentially  
-✅ **Free Tier Compliant** — Uses Gemini free tier (10 RPM, 250K TPM)  
-✅ **Hash-Based Dedup** — Instant duplicate detection without API calls  
-✅ **Structured Output** — JSON export for downstream analytics  
-✅ **Real Email Support** — IMAP integration for Gmail/Outlook/Yahoo/custom  
-✅ **Rate Limiting** — Automatic quota management (6-second delays)  
-✅ **Error Resilience** — Graceful degradation with fallback values  
-✅ **Zero Vendor Lock-in** — Swap LLMs easily (designed for portability)
+**Multi-Agent Architecture** — Three specialized agents work sequentially  
+**Free Tier Compliant** — Uses Gemini free tier (10 RPM, 250K TPM)  
+**Hash-Based Dedup** — Instant duplicate detection without API calls  
+**Structured Output** — JSON export for downstream analytics  
+**Real Email Support** — IMAP integration for Gmail/Outlook/Yahoo/custom  
+**Rate Limiting** — Automatic quota management (6-second delays)  
+**Error Resilience** — Graceful degradation with fallback values  
+**Zero Vendor Lock-in** — Swap LLMs easily (designed for portability)
 
 ---
 
@@ -190,77 +190,29 @@ OUTPUT (JSON + Console Display)
 
 ### Phase 2: Enhanced User Experience
 
-- 🎨 **Visual Dashboard** — Beautiful web UI with Streamlit/React
-- 📸 **Rich Media Support** — Display images, videos, audio from original newsletters
-- 🔗 **Original Links** — One-click access to full newsletters
-- ⚙️ **Tone Adjustment** — Customize summaries: Quirky, Professional, Direct, Cool, Friendly
-- 👥 **Persona Modes** — Scientist, Artist, Doctor, Engineer perspectives
-- 🎭 **Hybrid Personas** — Combine tones + personas (e.g., "Quirky Artist," "Friendly Engineer")
+- **Visual Dashboard** — Beautiful web UI with Streamlit/React
+- **Rich Media Support** — Display images, videos, audio from original newsletters
+- **Original Links** — One-click access to full newsletters
+- **Tone Adjustment** — Customize summaries: Quirky, Professional, Direct, Cool, Friendly
+- **Persona Modes** — Scientist, Artist, Doctor, Engineer perspectives
+- **Hybrid Personas** — Combine tones + personas (e.g., "Quirky Artist," "Friendly Engineer")
 
 ### Phase 3: Advanced Analytics
 
-- 📈 **Trend Analysis** — Track topics over time
-- 💡 **Opportunity Detection** — ML-powered insight extraction
-- 🔍 **Search & Filter** — Full-text search across summaries
-- 📧 **Smart Unsubscribe** — AI recommends newsletters to drop
-- 🔔 **Smart Alerts** — Notify on high-priority content
-- 💾 **Database Storage** — PostgreSQL/MongoDB for persistence
+- **Trend Analysis** — Track topics over time
+- **Opportunity Detection** — ML-powered insight extraction
+- **Search & Filter** — Full-text search across summaries
+- **Smart Unsubscribe** — AI recommends newsletters to drop
+- **Smart Alerts** — Notify on high-priority content
+- **Database Storage** — PostgreSQL/MongoDB for persistence
 
 ### Phase 4: Enterprise Features
 
-- 👥 **Team Collaboration** — Share insights across teams
-- 🏢 **Multi-Account Management** — Process dozens of email accounts
-- 📊 **Executive Reports** — Weekly/monthly summary reports
-- 🔐 **Security & Compliance** — SOC2, GDPR-ready
-- 🌐 **Multi-Language** — Support for global teams
-
----
-
-## Getting Started
-
-### Quick Setup (5 Minutes)
-
-**1. Prerequisites**
-
-```bash
-pip install -r requirements.txt
-export GEMINI_API_KEY="your-key-from-aistudio"
-```
-
-**2. Run Quickstart**
-
-```bash
-python quickstart.py  # Verify everything works
-```
-
-**3. Process Real Emails**
-
-```python
-from advanced_config import ImapEmailSource
-from newsletter_parser import NewsletterParserOrchestrator
-
-# Connect to Gmail
-imap = ImapEmailSource('your@email.com', 'app-password', 'imap.gmail.com')
-imap.connect()
-
-# Fetch newsletters
-emails = imap.fetch_newsletters(max_results=50)
-
-# Process with agents
-orchestrator = NewsletterParserOrchestrator()
-results = orchestrator.parse_batch(emails)
-
-# View results
-print(orchestrator.get_minimalist_display())
-```
-
-### Production Deployment
-
-- ✅ Schedule daily processing (cron/Task Scheduler)
-- ✅ Store results in database
-- ✅ Build dashboard for visualization
-- ✅ Set up email notifications
-- ✅ Monitor API quota usage
+- **Team Collaboration** — Share insights across teams
+- **Multi-Account Management** — Process dozens of email accounts
+- **Executive Reports** — Weekly/monthly summary reports
+- **Security & Compliance** — SOC2, GDPR-ready
+- **Multi-Language** — Support for global teams
 
 ---
 
@@ -286,14 +238,3 @@ print(orchestrator.get_minimalist_display())
 
 **Newsletter Juicer** solves the information overload paradox through intelligent automation. By deploying specialized AI agents to handle categorization, summarization, and deduplication, users regain control of their inbox while staying informed on topics that matter.
 
-The system is:
-- 🚀 **Production-ready** — Deploy today
-- 💰 **Completely free** — Uses Gemini free tier
-- 🔄 **Scalable** — Handles hundreds of newsletters daily
-- 🎯 **Extensible** — Ready for dashboards, databases, and advanced analytics
-
-**Get started in 5 minutes. Transform your newsletter workflow forever.**
-
----
-
-*Built with Python, Google Gemini API, and a passion for information accessibility.*
